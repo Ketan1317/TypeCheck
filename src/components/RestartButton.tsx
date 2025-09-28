@@ -16,7 +16,7 @@ const RestartButton = ({ onRestart: handleRestart }: RestartButtonTypes) => {
     <button
       ref={btnRef}
       onClick={handleClick}
-      className={`block mx-auto mt-12 text-slate-500 rounded px-8 py-2 hover:bg-slate-500 `}
+      className={`block mx-auto mt-12 text-slate-500 rounded px-8 py-2 hover:text-slate-800 `}
     >
       <MdRefresh size={24} />
     </button>
