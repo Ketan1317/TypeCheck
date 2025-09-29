@@ -17,7 +17,7 @@ const UserTyping = ({ userInput, words }: UserTypingType) => {
   const typedCharacter = userInput.split("");
 
   return (
-    <div className="absolute inset-0 left-[2px] text-3xl">
+    <div className="absolute inset-0 left-[2px] text-left text-3xl">
       {typedCharacter.map((char: string, idx: number) => {
         return (
           <Character

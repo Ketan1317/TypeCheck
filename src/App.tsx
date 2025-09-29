@@ -50,4 +50,3 @@ const Timer = ({ timeLeft }: { timeLeft: number }) => {
 
 export default App;
 
-
