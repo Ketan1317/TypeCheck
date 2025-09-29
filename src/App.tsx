@@ -31,14 +31,14 @@ const App = () => {
 };
 
 const GenerateWords = ({ words }: { words: string }) => {
-  return <div className="text-3xl text-center">{words}</div>;
+  return <div className="text-3xl">{words}</div>;
 };
 
 const Timer = ({ timeLeft }: { timeLeft: number }) => {
   return (
     <div>
       <h1
-        className={`text-2xl mb-10 font-semibold text-yellow-400 text-center ${
+        className={`text-2xl mb-10 font-semibold text-yellow-400 ${
           timeLeft <= 10 ? "animate-ping font-semibold" : ""
         }`}
       >

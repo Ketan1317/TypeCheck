@@ -41,6 +41,7 @@ const useEngine = () => {
     updateWords();
     setErrors(0);
     setWpm(0);
+    console.log("restart done")
   },[clearTyped, resetCountdown, resetTotalTyped, updateWords]);
 
   useEffect(() => {

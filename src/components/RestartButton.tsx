@@ -12,7 +12,8 @@ const RestartButton = ({ onRestart, timeLeft }: RestartButtonTypes) => {
       className={`block mx-auto mt-14 text-slate-500 rounded px-8 py-2 hover:text-slate-800 
         ${timeLeft === 0 ? "animate-bounce text-yellow-400" : ""}`}
     >
-      <MdRefresh size={29} />
+      {/* <MdRefresh size={29} /> */}
+      restart
     </button>
   );
 };

@@ -17,7 +17,7 @@ const UserTyping = ({ userInput, words }: UserTypingType) => {
   const typedCharacter = userInput.split("");
 
   return (
-    <div className="absolute inset-0 left-[2px] text-left text-3xl">
+    <div className="absolute inset-0 text-left text-3xl">
       {typedCharacter.map((char: string, idx: number) => {
         return (
           <Character
@@ -42,7 +42,7 @@ const Character = ({ actual, expected }: CharacterType) => {
       className={cn({
         "text-red-500 bg-rose-500/20 rounded-sm": !isCorrect && !isWhitespace,       // wrong character
         "text-yellow-400": isCorrect && !isWhitespace,     // correct character
-        "bg-yellow-200": !isCorrect && isWhitespace,       // wrong space
+        "bg-red-500": !isCorrect && isWhitespace,       // wrong space
       })}
     >
       {expected}
