@@ -18,6 +18,18 @@ export const countErrors = (actual: string, expected: string) => {
   }, 0);
 };
 
+export function calculateWPM(
+  totalChars: number,
+  errors: number,
+  timeInSeconds: number
+): number {
+  if (timeInSeconds <= 0) return 0;
+
+  const timeInMinutes = timeInSeconds / 60;
+
+  return Math.max(0, Math.round((totalChars / 5 - errors) / timeInMinutes));
+}
+
 
 export const calculateAccuracyPercentage = (errors: number, total: number) => {
   if (total > 0) {

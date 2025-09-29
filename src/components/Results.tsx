@@ -6,11 +6,12 @@ type ResultTypes = {
   errors: number;
   accuracyPercentage: number;
   total: number;
+  speed:number
   state: State
 
 };
 
-const Results = ({ errors, accuracyPercentage, total,state }: ResultTypes) => {
+const Results = ({ errors, accuracyPercentage, total,state,speed }: ResultTypes) => {
     
   const initial = { opacity: 0 };
   const animate = { opacity: 1 };
@@ -53,6 +54,13 @@ const Results = ({ errors, accuracyPercentage, total,state }: ResultTypes) => {
         transition={{ ...duration, delay: 1.5 }}
       >
         Typed: {total} Words
+      </motion.li>
+      <motion.li
+        initial={initial}
+        animate={animate}
+        transition={{ ...duration, delay: 1.5 }}
+      >
+        WPM: {speed} Words Per Minute 
       </motion.li>
     </ul>
   );

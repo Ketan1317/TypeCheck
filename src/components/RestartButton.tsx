@@ -1,24 +1,18 @@
-import { useRef } from "react";
 import { MdRefresh } from "react-icons/md";
 
 type RestartButtonTypes = {
   onRestart: () => void;
+  timeLeft: number;
 };
 
-const RestartButton = ({ onRestart: handleRestart }: RestartButtonTypes) => {
-  const btnRef = useRef<HTMLButtonElement>(null);
-
-  const handleClick = () => {
-    btnRef.current?.blur();
-    handleRestart();
-  };
+const RestartButton = ({ onRestart, timeLeft }: RestartButtonTypes) => {
   return (
     <button
-      ref={btnRef}
-      onClick={handleClick}
-      className={`block mx-auto mt-12 text-slate-500 rounded px-8 py-2 hover:text-slate-800 `}
+      onClick={onRestart} 
+      className={`block mx-auto mt-14 text-slate-500 rounded px-8 py-2 hover:text-slate-800 
+        ${timeLeft === 0 ? "animate-bounce text-yellow-400" : ""}`}
     >
-      <MdRefresh size={24} />
+      <MdRefresh size={29} />
     </button>
   );
 };
