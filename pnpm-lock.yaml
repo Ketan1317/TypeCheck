@@ -26,6 +26,9 @@ importers:
       motion:
         specifier: ^12.23.22
         version: 12.23.22(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      ogl:
+        specifier: ^1.0.11
+        version: 1.0.11
       random-words:
         specifier: ^2.0.1
         version: 2.0.1
@@ -1171,6 +1174,9 @@ packages:
 
   node-releases@2.0.21:
     resolution: {integrity: sha512-5b0pgg78U3hwXkCM8Z9b2FJdPZlr9Psr9V2gQPESdGHqbntyFJKFW4r5TeWGFzafGY3hzs1JC62VEQMbl1JFkw==}
+
+  ogl@1.0.11:
+    resolution: {integrity: sha512-kUpC154AFfxi16pmZUK4jk3J+8zxwTWGPo03EoYA8QPbzikHoaC82n6pNTbd+oEaJonaE8aPWBlX7ad9zrqLsA==}
 
   optionator@0.9.4:
     resolution: {integrity: sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==}
@@ -2396,6 +2402,8 @@ snapshots:
   natural-compare@1.4.0: {}
 
   node-releases@2.0.21: {}
+
+  ogl@1.0.11: {}
 
   optionator@0.9.4:
     dependencies:
